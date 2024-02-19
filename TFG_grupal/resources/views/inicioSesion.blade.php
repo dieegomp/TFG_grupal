@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../resources/css/app.css">
+    <script src="../resources/js/app.js"> </script>
     <title>TriniAnim</title>
 </head>
 <body>
     <div class="form">
       
         <ul class="tab-group">
-          <li class="tab active"><a href="#signup">Sign Up</a></li>
-          <li class="tab"><a href="#login">Log In</a></li>
+          <li class="tab active"><a href="#Registrarse">Registrarse</a></li>
+          <li class="tab"><a href="#IniciarSesion">Iniciar Sesion</a></li>
         </ul>
         
         <div class="tab-content">
-          <div id="signup">   
-            <h1>Sign Up for Free</h1>
+          <div id="Registrate">   
+            <h1>Registrate</h1>
             
             <form action="/" method="post">
             
             <div class="top-row">
               <div class="field-wrap">
                 <label>
-                  First Name<span class="req">*</span>
+                  Nombre
                 </label>
                 <input type="text" required autocomplete="off" />
               </div>
           
               <div class="field-wrap">
                 <label>
-                  Last Name<span class="req">*</span>
+                  Apellido1
+                </label>
+                <input type="text"required autocomplete="off"/>
+              </div>
+              <div class="field-wrap">
+                <label>
+                  Apellido2
                 </label>
                 <input type="text"required autocomplete="off"/>
               </div>
@@ -38,53 +46,46 @@
   
             <div class="field-wrap">
               <label>
-                Email Address<span class="req">*</span>
+                Email 
               </label>
               <input type="email"required autocomplete="off"/>
             </div>
             
             <div class="field-wrap">
               <label>
-                Set A Password<span class="req">*</span>
+                Contraseña
               </label>
               <input type="password"required autocomplete="off"/>
             </div>
             
-            <button type="submit" class="button button-block"/>Get Started</button>
+            <button type="submit" class="button button-block">Registrarse</button>
             
             </form>
   
           </div>
           
-          <div id="login">   
-            <h1>Welcome Back!</h1>
+          <div id="IniciarSesion">   
+            <h1>Inicia Sesion</h1>
             
             <form action="/" method="post">
             
               <div class="field-wrap">
               <label>
-                Email Address<span class="req">*</span>
+                Usuario
               </label>
               <input type="email"required autocomplete="off"/>
             </div>
             
             <div class="field-wrap">
               <label>
-                Password<span class="req">*</span>
+                Contraseña
               </label>
               <input type="password"required autocomplete="off"/>
             </div>
-            
-            <p class="forgot"><a href="#">Forgot Password?</a></p>
-            
-            <button class="button button-block">Log In</button>
-            
+            <button class="button button-block">Iniciar Sesion</button> 
             </form>
-  
-          </div>
-          
-        </div><!-- tab-content -->
-        
-  </div> <!-- /form -->
+          </div> 
+        </div>
+  </div>
 </body>
 </html>
