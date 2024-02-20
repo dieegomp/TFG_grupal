@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../resources/css/app.css">
     <script src="../resources/js/app.js"> </script>
     <title>TriniAnim</title>
-</head>
+</head> 
 <body>
     <div class="form">
       

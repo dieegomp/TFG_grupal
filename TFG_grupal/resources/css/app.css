@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -10,7 +8,7 @@ html {
 }
 
 body {
-  background:#c1bdba;
+  background:#363535;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -24,7 +22,7 @@ a {
 }
 
 .form {
-  background:rgba(#13232f,.9);
+  background:rgba(black,.9);
   padding: 40px;
   max-width:600px;
   margin:40px auto;
@@ -53,10 +51,6 @@ a {
     text-align:center;
     cursor:pointer;
     transition:.5s ease;
-    &:hover {
-      background:darken(#1ab188,5%);
-      color:#ffffff;
-    }
   }
   .active a {
     background:#1ab188;
@@ -162,9 +156,6 @@ textarea {
   color:#ffffff;
   transition:all.5s ease;
   -webkit-appearance: none;
-  &:hover, &:focus {
-    background:darken(#1ab188,5%);
-  }
 }
 
 .button-block {
