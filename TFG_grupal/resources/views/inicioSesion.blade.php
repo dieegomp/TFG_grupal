@@ -9,53 +9,41 @@
     <title>TriniAnim</title>
 </head> 
 <body>
-    <div class="form">
+    <div class="form container-fluid">
       
         <ul class="tab-group">
-          <li class="tab active"><a href="#Registrarse">Registrarse</a></li>
+          <li class="tab active "><a href="#Registrarse">Registrarse</a></li>
           <li class="tab"><a href="#IniciarSesion">Iniciar Sesion</a></li>
         </ul>
         
-        <div class="tab-content">
-          <div id="Registrate">   
+        <div class="col-md-6">
+          <div id="Registrate" class="Cambio col-6">   
             <h1>Registrate</h1>
             
             <form action="/" method="post">
             
             <div class="top-row">
               <div class="field-wrap">
-                <label>
-                  Nombre
-                </label>
-                <input type="text" required autocomplete="off" />
-              </div>
-          
-              <div class="field-wrap">
-                <label>
-                  Apellido1
-                </label>
-                <input type="text"required autocomplete="off"/>
+              
+                <input type="text" required autocomplete="off" placeholder="Nombre" />
               </div>
               <div class="field-wrap">
-                <label>
-                  Apellido2
-                </label>
-                <input type="text"required autocomplete="off"/>
+                <input type="text" required autocomplete="off" placeholder="Usuario" />
+              </div>
+              <div class="field-wrap">
+                <input type="text"required autocomplete="off" placeholder="Apellido1"/>
+              </div>
+              <div class="field-wrap">
+                <input type="text"required autocomplete="off" placeholder="Apellido2"/>
               </div>
             </div>
   
             <div class="field-wrap">
-              <label>
-                Email 
-              </label>
-              <input type="email"required autocomplete="off"/>
+              <input type="email"required autocomplete="off" placeholder="Email"/>
             </div>
             
             <div class="field-wrap">
-              <label>
-                Contraseña
-              </label>
-              <input type="password"required autocomplete="off"/>
+              <input type="password"required autocomplete="off" placeholder="Contraseña"/>
             </div>
             
             <button type="submit" class="button button-block">Registrarse</button>
@@ -64,23 +52,15 @@
   
           </div>
           
-          <div id="IniciarSesion">   
+          <div id="IniciarSesion" class="Cambio col-6">   
             <h1>Inicia Sesion</h1>
             
             <form action="/" method="post">
-            
               <div class="field-wrap">
-              <label>
-                Usuario
-              </label>
-              <input type="email"required autocomplete="off"/>
+              <input type="text"required autocomplete="off" placeholder="Usuario"/>
             </div>
-            
             <div class="field-wrap">
-              <label>
-                Contraseña
-              </label>
-              <input type="password"required autocomplete="off"/>
+              <input type="password"required autocomplete="off" placeholder="Contraseña"/>
             </div>
             <button class="button button-block">Iniciar Sesion</button> 
             </form>
