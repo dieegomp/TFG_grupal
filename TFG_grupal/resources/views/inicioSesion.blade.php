@@ -66,6 +66,7 @@
             </form>
           </div> 
         </div>
+        <a href="{{ url('/Elegir') }}"><button class="BotonesDeSeleccion btn-primary"value="ActualizarEstado">Actualiza estado</button></a>
   </div>
 </body>
 </html>

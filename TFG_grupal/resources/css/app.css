@@ -130,6 +130,8 @@ textarea {
   -webkit-appearance: none;
 }
 
+.botonesDeSeleccion{
+margin-left: 50%;}
 .button-block {
   display:block;
   width:100%;
