@@ -2,10 +2,6 @@
  #ActualizarEstado {
     display: none; 
   }
-
-  #MostrarEstado{
-    display: none;
-  }
   
   .emoji-button {
     font-size: 80px;
@@ -37,19 +33,6 @@
     left: 50%; 
   }
 
-  #fechaActual2{
-    transform: translateX(-50%); 
-    position: absolute;
-    top: 405px;
-    font-size: xx-large;
-    color: rgb(153, 0, 64);
-    font-weight: bold;
-    left: 50%; 
-  }
-
-  label{
-    font-size: xx-large;
-  }
   /***********************************/
 body {
     background:#999898;
@@ -92,45 +75,7 @@ body {
     font-weight:20;
     margin:0 0 40px;
   }
-
-  .tab-group {
-  list-style:none;
-  padding: 0;
-  margin:0 0 40px 0;
-  display: flex; /* Make the tab group flex container */
-}
-
-.tab {
-  width: 33.33%; /* Equal width for each tab */
-}
-
-.active a {
-  background:#0004ff;
-  color:#ffffff;
-  border-top-style:solid;
-  border-top-color:black; 
-  border-top-width:3px;
-  border-bottom-color:black;
-  border-bottom-style:solid;
-  border-left-color:red; 
-  border-left-style:solid;
-  border-right-color:red; 
-  border-right-style:solid;
-}
-
-li {
-  width: 33.33%; /* Equal width for each list item */
-}
-
-li a {
-  text-decoration:none;
-  padding:15px;
-  font-size:20px;
-  text-align:center;
-  display: block; /* Make the link a block element */
-}
-
- /* 
+  
   .tab-group {
     list-style:none;
     padding: 0;
@@ -159,7 +104,7 @@ li a {
     width:50%;
     text-align:center;
   }
-  */
+  
 .field-wrap { 
     margin-bottom: 20px; 
   }
@@ -171,18 +116,18 @@ li a {
   
   }
 
-  select {
-    font-size: 22px;
-    display: block;
+  input, textarea {
+    font-size:22px;
+    display:block;
     width: 100%;
-    height: 100%;
-    padding: 5px 10px;
-    background: none;
-    background-image: none;
-    border: 1px solid black;
-    color: #ff0000;
-    border-radius: 0;
-}
+    height:100%;
+    padding:5px 10px;
+    background:none;
+    background-image:none;
+    border:1px solid black;
+    color:#ff0000;
+    border-radius:0;
+  }
   
 .button {
     border:0;

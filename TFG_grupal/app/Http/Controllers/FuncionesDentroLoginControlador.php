@@ -19,7 +19,7 @@ class FuncionesDentroLoginControlador extends Controller
         // Authenticando el usuatrio
         if (auth()->attempt($request->only('Gmail', 'Contraseña'))) {             // Authenticacion con exíto
 
-            return redirect()->intended('/xxxx'); // Te redirege dentro para ver estado animos
+            return redirect()->intended('/XXX'); // Te redirege dentro para ver estado animos
         } else {
             
             return back()->with('error', 'Correo electrónico o contraseña incorrectos.'); // Authenticacion fallo

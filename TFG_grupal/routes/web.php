@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\RegistroControlador2;
-use App\Http\Controllers\RegistroControlador;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,32 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// <form action="{{ route('/usuarios') }}" method="post">       <form action="{{ route('/registro') }}" method="post">
-//Route::post('/registro', [RegistroControlador2::class]);
-
-//Route::post('/registro', [RegistroControlador::class]);
-//Route::post('/registro', 'RegistroControlador@registro')->name('registro');
-
-//Route::resource("registro", RegistroControlador2::class);
-
-Route::post('/login', 'LoginController@login')->name('login');
-
+/*
 Route::get('/', function () {
     return view('inicioSesion');
 });
 
-
-Route::get('/app', function () {
-    return view('estadosAnimo');
+Route::get('/Elegir', function () {
+    return view('actOreg');
 });
-
-Route::resource("usuarios", RegistroControlador2::class);
-
-
-
+*/
 Route::get('/login', 'LoginControlador@showLoginForm')->name('login');
 Route::post('/login', 'LoginController@login')->name('login');
-
+Route::post('/register', 'RegistroControlador@register')->name('register');
 
 
